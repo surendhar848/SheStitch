@@ -1,0 +1,17 @@
+# === React Frontend ===
+tailoring-frontend/node_modules/
+tailoring-frontend/build/
+
+# === Laravel Backend ===
+tailoring-backend/vendor/
+tailoring-backend/.env
+
+# === General System Files ===
+.DS_Store
+Thumbs.db
+*.log
+*.env
+
+# === Optional: Ignore editor configs or OS-specific files ===
+.vscode/
+.idea/
