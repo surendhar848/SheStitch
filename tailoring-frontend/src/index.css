@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated horizontal dashed line for "cut" effect */
+@keyframes cut-line {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.bg-dashed-line {
+  background-image: repeating-linear-gradient(
+    to right,
+    #aaa,
+    #aaa 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  height: 2px;
+  background-size: 40px 1px;
+}
+.animate-cut-line {
+  animation: cut-line 1s linear infinite;
+}
+
+/* Scissor movement animation left to right */
+@keyframes scissor-move {
+  0% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+.animate-scissor-move {
+  animation: scissor-move 2s ease-in-out infinite alternate;
+}
